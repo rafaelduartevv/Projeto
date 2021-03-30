@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageUploaded"
+        android:layout_width="290dp"
+        android:layout_height="279dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:padding="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageUploaded"
+        android:gravity="center_horizontal"
+        android:hint="Descrição"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/select_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/description"
+        android:background="@drawable/button_round_corners"
+        android:scaleType="fitCenter"
+        android:text="Selecione Imagem"
+        android:padding="20dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/select_btn"
+        android:background="@drawable/button_round_corners"
+        android:scaleType="fitCenter"
+        android:text="Upload"
+        android:padding="20dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

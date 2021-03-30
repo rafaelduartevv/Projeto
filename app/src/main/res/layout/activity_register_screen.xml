@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginScreen">
+
+
+    <TextView
+        android:id="@+id/haveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já tem conta?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <Button
+        android:id="@+id/signInRegister"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="124dp"
+        android:background="#00FFFFFF"
+        android:text="LOG IN"
+        android:textColor="@color/darkGrey"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorHint="#00FFFFFF"
+
+        android:textColorLink="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
+        app:layout_constraintVertical_bias="0.272"
+        android:layout_marginRight="124dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="230dp"
+        android:layout_height="51dp"
+        android:text="Registo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginRect"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="241dp"
+        android:background="@color/background"
+        android:contentDescription="@string/loginImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginRect"
+        android:layout_width="322dp"
+        android:layout_height="373dp"
+        android:background="@drawable/rect_round_corners"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <EditText
+        android:id="@+id/fullnameRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nome Completo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toTopOf="@+id/loginRect"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/fullnameRegister"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegister"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/phoneRegister"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <EditText
+        android:id="@+id/phoneRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Telemóvel"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <EditText
+        android:id="@+id/repeatPasswordRegister"
+        android:layout_width="279dp"
+        android:layout_height="39dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Repetir Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <RadioButton
+        android:id="@+id/maleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:color="@color/darkGrey"
+        android:text="Masculino"
+        android:textColor="@color/darkGrey"
+
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordRegister"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <RadioButton
+        android:id="@+id/femaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:color="@color/darkGrey"
+        android:text="Feminino"
+        android:textColor="@color/darkGrey"
+
+        app:layout_constraintBottom_toBottomOf="@+id/loginRect"
+        app:layout_constraintEnd_toEndOf="@+id/loginRect"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="@+id/loginRect"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordRegister"
+        app:layout_constraintVertical_bias="0.466" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
